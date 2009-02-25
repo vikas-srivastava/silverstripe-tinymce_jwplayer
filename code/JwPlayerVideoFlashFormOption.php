@@ -7,8 +7,8 @@ class JwPlayerVideoFlashFormOption extends HtmlEditorField_FlashFormOption {
 	
 	function getFields() {
 		$fields = new FieldGroup(_t('HtmlEditorField.IMAGEDIMENSIONS', "Dimensions"),
-			$fieldWidth = new TextField("jwplayer[Width]", _t('JwPlayerFlashFormOption.IMAGEWIDTHPX', "Width"), JwPlayerParser::$default_width),
-			$fieldHeight = new TextField("jwplayer[Height]", _t('JwPlayerFlashFormOption.IMAGEHEIGHTPX', "Height"), JwPlayerParser::$default_height)
+			$fieldWidth = new TextField("jwplayervideo[Width]", _t('JwPlayerFlashFormOption.IMAGEWIDTHPX', "Width"), JwPlayerParser::$default_width),
+			$fieldHeight = new TextField("jwplayervideo[Height]", _t('JwPlayerFlashFormOption.IMAGEHEIGHTPX', "Height"), JwPlayerParser::$default_height)
 		);
 		$fieldWidth->addExtraClass('small');
 		$fieldHeight->addExtraClass('small');
